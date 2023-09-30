@@ -1,0 +1,48 @@
+@import './variables';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $montserrat-font;
+}
+
+p{
+    font-size: $paragraph-font-size;
+    font-family: $montserrat-font;
+}
+
+h1{
+    font-family: $fraunces-font;
+}
+
+.preview-card{
+
+    .product-img{
+        background-image: url('./media/image-product-desktop.jpg');
+    }
+
+    .product-info{
+        p{
+            color: $dark-grayish-blue; 
+        }
+
+        .product-cost-wrapper{
+            h1{
+                color: $dark-cyan;
+            }
+
+            p{
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+@media (max-width: $desktop){
+    
+}
+
+@media (max-width: $mobile-breakpoint){
+
+}
