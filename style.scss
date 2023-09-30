@@ -18,9 +18,18 @@ h1{
 }
 
 .preview-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $cream;
 
     .product-img{
         background-image: url('./media/image-product-desktop.jpg');
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
     }
 
     .product-info{
@@ -28,7 +37,15 @@ h1{
             color: $dark-grayish-blue; 
         }
 
+        p:first-child{
+            letter-spacing: 4px;
+        }
+
         .product-cost-wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
             h1{
                 color: $dark-cyan;
             }
@@ -39,6 +56,7 @@ h1{
         }
     }
 }
+
 @media (max-width: $desktop){
     
 }
