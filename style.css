@@ -23,7 +23,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: hsl(30, 38%, 92%);
+  border-radius: 5px;
 }
 .preview-card .product-img {
   background-image: url("./media/image-product-desktop.jpg");
@@ -48,4 +48,14 @@ h1 {
 }
 .preview-card .product-info .product-cost-wrapper p {
   text-decoration: line-through;
+}
+
+@media (max-width: 375px) {
+  .preview-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-card .product-img {
+    background-image: url(./media/image-product-mobile.jpg);
+  }
 }/*# sourceMappingURL=style.css.map */
