@@ -37,6 +37,18 @@ h1 {
   overflow: hidden;
   height: 400px;
 }
+.preview-card button {
+  all: initial;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: hsl(158, 36%, 37%);
+  height: 50px;
+  color: hsl(0, 0%, 100%);
+  gap: 10px;
+}
 .preview-card .product-img {
   background-image: url("./media/image-product-desktop.jpg");
   height: 100%;
@@ -83,14 +95,14 @@ h1 {
   }
   .preview-card .product-img {
     background-image: url(./media/image-product-mobile.jpg);
-    height: 40%;
+    height: 44%;
     width: 100%;
   }
   .preview-card .product-info {
-    height: 60%;
+    height: 56%;
     padding: 20px;
   }
-  .preview-card .product-info p {
+  .preview-card .product-info > p {
     padding-top: 10px;
     font-size: 15px;
   }
@@ -98,5 +110,8 @@ h1 {
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .preview-card .product-info .product-cost-wrapper > p {
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
