@@ -35,7 +35,7 @@ h1 {
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
-  height: 600px;
+  height: 356px;
 }
 .preview-card button {
   all: initial;
@@ -88,9 +88,8 @@ h1 {
   }
   .product-img {
     background-image: url(./media/image-product-desktop.jpg);
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    background-size: cover;
+    background-position: center;
   }
   .product-info > p {
     padding-top: 10px;

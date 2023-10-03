@@ -36,7 +36,7 @@ h1{
     align-items: center;
     border-radius: 10px;
     overflow: hidden;
-    height: 600px;
+    height: 356px;
 
     button{
         all: initial;
@@ -98,12 +98,12 @@ h1{
     }
     .product-img{
         background-image: url(./media/image-product-desktop.jpg);
-        width: 100%;
-        object-fit: cover;
+        background-size: cover;
+        background-position: center;
     }
 
     .product-info{
-
+        
         > p{
             padding-top: 10px;
             font-size: 15px;
@@ -122,6 +122,7 @@ h1{
         }
     }   
 }
+
 
 @media (max-width: $mobile-breakpoint){
     .card-contain{
